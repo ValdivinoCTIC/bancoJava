@@ -4,6 +4,7 @@ public class ContaCorrente {
 	int conta;
 	int agencia;
 	double saldo;
+	static double cpmf; //atributo estático
 	String nome;
 	
 	public String getNome(){
@@ -40,6 +41,14 @@ public class ContaCorrente {
 	
 	public void setConta(int conta){
 		this.conta = conta;
+	}
+	
+	public double getCpmf(){
+		return cpmf;
+	}
+	
+	public void setCpmf(double cpmf){
+		ContaCorrente.cpmf = cpmf;
 	}
 	
 	public double getSaldo(){
